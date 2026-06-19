@@ -26,7 +26,8 @@ export GITHUB_SHA
 .PHONY: quick all lulu indent clean
 
 # The default targets
-all: lshort.pdf lshort-letter.pdf lshort-a5.pdf
+#all: lshort.pdf lshort-letter.pdf lshort-a5.pdf
+all: lshort.pdf
 
 indent:
 	latexindent -w -m -l .localSettings.yaml src/*.tex

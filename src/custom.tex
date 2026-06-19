@@ -761,8 +761,8 @@ Normal text.
 \texttt{Monospace text.
   \emph{Emphasised}.} \\
 
-\setmainfont{Source Serif Pro}
-\setsansfont{Source Sans Pro}
+\setmainfont{Source Serif 4}
+\setsansfont{Source Sans 3}
 \setmonofont{Source Code Pro}
 Normal text.
   \emph{Emphasised.} \\
@@ -779,12 +779,12 @@ customise the font features. For example, many fonts contain,
 old style numerals that are not used by default. You can pass
 \cargv{Number=OldStyle} if you want to use them in your document.
 \begin{example}
-\setmainfont{Source Serif Pro}
+\setmainfont{Source Serif 4}
 0123456789
 
 \setmainfont[
   Numbers=OldStyle,
-]{Source Serif Pro}
+]{Source Serif 4}
 0123456789
 \end{example}
 
@@ -816,7 +816,7 @@ with \cargv{Fractions=On} key.
 
 \setmainfont[
   Fractions=On,
-]{Source Serif Pro}
+]{Source Serif 4}
 1/2 3/4 123/456
 \end{example}
 
@@ -838,19 +838,19 @@ loading techniques. If the font files are not present in the same directory as
 the document you may have to specify it directly using the \cargv{Path} key.
 \begin{listing}
   \begin{example}[vertical_mode, examplewidth=0.8\linewidth]
-\setmainfont{Source Serif Pro}
+\setmainfont{Source Serif 4}
 Normal text. \textit{Italics.} \textbf{Bold.}
 \textit{\textbf{Bold italics.}} \\
 
-\setmainfont{SourceSerifPro-Regular.otf}
+\setmainfont{SourceSerif4-Regular.otf}
 Normal text. \textit{Italics.} \textbf{Bold.}
 \textit{\textbf{Bold italics.}} \\
 
 \setmainfont[
-  ItalicFont=SourceSerifPro-RegularIt.otf,
-  BoldFont=SourceSerifPro-Bold.otf,
-  BoldItalicFont=SourceSerifPro-BoldIt.otf,
-]{SourceSerifPro-Regular.otf}
+  ItalicFont=SourceSerif4-RegularIt.otf,
+  BoldFont=SourceSerif4-Bold.otf,
+  BoldItalicFont=SourceSerif4-BoldIt.otf,
+]{SourceSerif4-Regular.otf}
 Normal text. \textit{Italics.} \textbf{Bold.}
 \textit{\textbf{Bold italics.}} \\
 
@@ -860,7 +860,7 @@ Normal text. \textit{Italics.} \textbf{Bold.}
   ItalicFont=*-RegularIt,
   BoldFont=*-Bold,
   BoldItalicFont=*-BoldIt,
-]{SourceSerifPro}
+]{SourceSerif4}
 Normal text. \textit{Italics.} \textbf{Bold.}
 \textit{\textbf{Bold italics.}}
 \end{example}
@@ -896,7 +896,7 @@ It defines new \carg{command} that works like to the \csi{rmfamily} or
 \begin{example}
 \newfontfamily{\sourcefamily}[
   Numbers=OldStyle,
-]{Source Serif Pro}
+]{Source Serif 4}
 
 Normal text when suddenly
 \ldots{} \sourcefamily
